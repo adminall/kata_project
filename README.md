@@ -1,1 +1,9 @@
-# kata_project
+# kata project
+
+
+# Design 
+
+
+# Solution
+
+
