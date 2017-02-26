@@ -1,9 +1,4 @@
 # kata project
 
 
-# Design 
-
-
-# Solution
-
 
