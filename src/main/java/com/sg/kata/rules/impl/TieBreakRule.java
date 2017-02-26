@@ -20,6 +20,9 @@ public class TieBreakRule implements Rule
 {
 	public static final Logger LOG = Logger.getLogger(TieBreakRule.class);
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public void apply(final Match match, final Player player) throws KataException
 	{

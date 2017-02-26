@@ -16,9 +16,8 @@ public class PlayerFactoryImpl implements PlayerFactory<Player, PlayerName>
 {
 
 	/**
-	 * This method create a new player
+	 * {@inheritDoc}
 	 *
-	 * @param PlayerName
 	 */
 	@Override
 	public Player createPlayer(final PlayerName playerName)

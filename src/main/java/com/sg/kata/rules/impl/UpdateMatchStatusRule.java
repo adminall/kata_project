@@ -20,6 +20,9 @@ public class UpdateMatchStatusRule implements Rule
 {
 	public static final Logger LOG = Logger.getLogger(UpdateMatchStatusRule.class);
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public void apply(final Match match, final Player player) throws KataException
 	{

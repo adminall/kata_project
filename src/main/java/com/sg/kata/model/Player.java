@@ -7,7 +7,11 @@ import com.sg.kata.exception.KataException;
 
 
 /**
+ * 
+ * This Class represent a {@link Player}
+ * 
  * @author Yassine.Mejri
+ * @version 0.1
  *
  */
 public class Player
@@ -27,7 +31,8 @@ public class Player
 
 	/**
 	 *
-	 * @param name
+	 * @param Player
+	 *           name
 	 */
 	public Player(final String name)
 	{
@@ -36,7 +41,8 @@ public class Player
 
 	/**
 	 * 
-	 * @param match
+	 * @param {@link
+	 * 			 Match}
 	 * @throws KataException
 	 */
 	public void addPoint(final Match match) throws KataException
@@ -45,7 +51,7 @@ public class Player
 	}
 
 	/**
-	 * 
+	 * Increment the game score
 	 */
 	public void incrementScoreSet()
 	{
@@ -60,7 +66,7 @@ public class Player
 	}
 
 	/**
-	 * 
+	 * reset the game score.
 	 */
 	public void resetScoreSet()
 	{
@@ -69,7 +75,7 @@ public class Player
 
 	/**
 	 * 
-	 * @return
+	 * @return the name of the {@link Player}
 	 */
 	public String getName()
 	{
@@ -78,7 +84,8 @@ public class Player
 
 	/**
 	 * 
-	 * @param name
+	 * @param the
+	 *           name of the {@link player}
 	 */
 	public void setName(final String name)
 	{
@@ -87,7 +94,8 @@ public class Player
 
 	/**
 	 * 
-	 * @return
+	 * @return player advantage or not
+	 * 
 	 */
 	public boolean isAdvantage()
 	{
@@ -96,7 +104,9 @@ public class Player
 
 	/**
 	 * 
-	 * @param advantage
+	 * @param set
+	 *           advantage to player
+	 * 
 	 */
 	public void setAdvantage(final boolean advantage)
 	{
@@ -105,7 +115,8 @@ public class Player
 
 	/**
 	 * 
-	 * @return
+	 * @return get the set score
+	 * 
 	 */
 	public int getScoreSet()
 	{
@@ -114,7 +125,9 @@ public class Player
 
 	/**
 	 * 
-	 * @param scoreSet
+	 * @param set
+	 *           the score set.
+	 * 
 	 */
 	public void setScoreSet(final int scoreSet)
 	{

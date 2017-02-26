@@ -35,18 +35,14 @@ public class RuleEngineImpl implements RuleEngine
 	 */
 	public RuleEngineImpl()
 	{
+		// initialize the list of rules.
 		rules.put(RuleName.ADVANTAGE, new AdvantageRule());
 		rules.put(RuleName.DEUCE, new BasicRule());
 		rules.put(RuleName.TIE_BREAK, new TieBreakRule());
 	}
 
 	/**
-	 * Apply rule for match and player.
-	 *
-	 * @param Match
-	 * @param Player
-	 * @throws KataException
-	 *
+	 * {@inheritDoc}
 	 */
 	@Override
 	public void applyRule(final Match match, final Player player) throws KataException

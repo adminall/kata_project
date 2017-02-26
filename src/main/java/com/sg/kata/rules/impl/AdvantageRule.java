@@ -21,6 +21,9 @@ public class AdvantageRule implements Rule
 {
 	public static final Logger LOG = Logger.getLogger(AdvantageRule.class);
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public void apply(final Match match, final Player player) throws KataException
 	{
@@ -31,7 +34,7 @@ public class AdvantageRule implements Rule
 
 		if (!match.isFinished())
 		{
-			Set lastSet = match.getSets().last();
+			final Set lastSet = match.getSets().last();
 			if (lastSet.getScorePlayerOne() != 6
 					|| lastSet.getScorePlayerTwo() != 6 && !match.getCurrentRule().equals(RuleName.TIE_BREAK))
 			{

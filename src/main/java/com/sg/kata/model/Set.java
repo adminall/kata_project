@@ -1,7 +1,7 @@
 package com.sg.kata.model;
 
 /**
- * Set
+ * This Class represent the Set.
  *
  * @author Yassine.Mejri
  *
@@ -23,71 +23,124 @@ public class Set implements Comparable
 
 	}
 
+	/**
+	 * 
+	 * @param order
+	 */
 	public Set(final int order)
 	{
 		this.order = order;
 	}
 
+	/**
+	 * 
+	 */
 	public void incrementScorePlayerOne()
 	{
 		scorePlayerOne++;
 	}
 
+	/**
+	 * 
+	 */
 	public void incrementScorePlayerTwo()
 	{
 		scorePlayerTwo++;
 	}
 
+	/**
+	 * 
+	 */
 	public void closeSet()
 	{
 		finished = Boolean.TRUE;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public boolean isFinished()
 	{
 		return finished;
 	}
 
+	/**
+	 * 
+	 * @param finished
+	 */
 	public void setFinished(final boolean finished)
 	{
 		this.finished = finished;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public int getOrder()
 	{
 		return order;
 	}
 
+	/**
+	 * 
+	 * @param order
+	 */
 	public void setOrder(final int order)
 	{
 		this.order = order;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public int getScorePlayerOne()
 	{
 		return scorePlayerOne;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public int getScorePlayerTwo()
 	{
 		return scorePlayerTwo;
 	}
 
+	/**
+	 * 
+	 * @param scorePlayerOne
+	 */
 	public void setScorePlayerOne(final int scorePlayerOne)
 	{
 		this.scorePlayerOne = scorePlayerOne;
 	}
 
+	/**
+	 * 
+	 * @param scorePlayerTwo
+	 */
 	public void setScorePlayerTwo(final int scorePlayerTwo)
 	{
 		this.scorePlayerTwo = scorePlayerTwo;
 	}
 
+	/**
+	 * 
+	 * @return
+	 */
 	public Player getWinner()
 	{
 		return winner;
 	}
 
+	/**
+	 * 
+	 * @param winner
+	 */
 	public void setWinner(final Player winner)
 	{
 		this.winner = winner;
@@ -102,11 +155,11 @@ public class Set implements Comparable
 	@Override
 	public int compareTo(final Object o)
 	{
-		if (order == ((Set) o).order)
+		if (this.order == ((Set) o).order)
 		{
 			return 0;
 		}
-		else if (order > ((Set) o).order)
+		else if (this.order > ((Set) o).order)
 		{
 			return 1;
 		}

@@ -21,6 +21,9 @@ public class BasicRule implements Rule
 
 	public static final Logger LOG = Logger.getLogger(BasicRule.class);
 
+	/**
+	 * {@inheritDoc}
+	 */
 	@Override
 	public void apply(final Match match, final Player player) throws KataException
 	{

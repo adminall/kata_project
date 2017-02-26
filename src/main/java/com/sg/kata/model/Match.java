@@ -1,3 +1,6 @@
+/**
+ * 
+ */
 package com.sg.kata.model;
 
 import java.util.Scanner;
@@ -17,7 +20,7 @@ import com.sg.kata.utils.FormatterUtils;
 
 
 /**
- * This class create a new Match.
+ * This class create a new {@link Match}.
  *
  * @author Yassine.Mejri
  * @version 0.1
@@ -92,9 +95,12 @@ public class Match
 	}
 
 	/**
-	 * Add new point for play giving in parameter.
+	 * Mark a point for the player giving in parameter.
 	 *
-	 * @param player
+	 * @param {@link
+	 * 			 Player}
+	 * @throws KataException
+	 * 
 	 */
 	public void addPointForPlayer(final Player player) throws KataException
 	{
@@ -165,8 +171,8 @@ public class Match
 	/**
 	 * Get the set winner.
 	 *
-	 * @param player
-	 * @return
+	 * @return {@link Player}
+	 * 
 	 */
 	public Player getSetWinner()
 	{
@@ -225,7 +231,8 @@ public class Match
 
 	/**
 	 * 
-	 * @return
+	 * @return SortedSet<Set>
+	 * 
 	 */
 	public SortedSet<Set> getSets()
 	{
@@ -234,7 +241,8 @@ public class Match
 
 	/**
 	 * 
-	 * @param playerOne
+	 * @param {@link
+	 * 			 Player}
 	 */
 	public void setPlayerOne(final Player playerOne)
 	{
@@ -243,7 +251,8 @@ public class Match
 
 	/**
 	 * 
-	 * @param playerTwo
+	 * @param {@link
+	 * 			 Player}
 	 */
 	public void setPlayerTwo(final Player playerTwo)
 	{
@@ -252,7 +261,7 @@ public class Match
 
 	/**
 	 * 
-	 * @param sets
+	 * @param SortedSet<Set>
 	 */
 	public void setSets(final SortedSet<Set> sets)
 	{
@@ -261,7 +270,7 @@ public class Match
 
 	/**
 	 * 
-	 * @return
+	 * @return boolean
 	 */
 	public boolean isFinished()
 	{
@@ -270,7 +279,7 @@ public class Match
 
 	/**
 	 * 
-	 * @param finished
+	 * @param boolean
 	 */
 	public void setFinished(final boolean finished)
 	{
@@ -279,7 +288,7 @@ public class Match
 
 	/**
 	 * 
-	 * @return
+	 * @return {@link RuleName}
 	 */
 	public RuleName getCurrentRule()
 	{
@@ -293,7 +302,8 @@ public class Match
 
 	/**
 	 * 
-	 * @return
+	 * @return {@link Player}
+	 * 
 	 */
 	public Player getMatchWinner()
 	{
@@ -302,7 +312,8 @@ public class Match
 
 	/**
 	 * 
-	 * @param matchWinner
+	 * @param {@linkPlayer}
+	 * 
 	 */
 	public void setMatchWinner(final Player matchWinner)
 	{
