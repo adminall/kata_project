@@ -48,10 +48,10 @@ public class KataTests
 	}
 
 	/**
-	 * Test
+	 * Score Game should be 0-15-30-40 WinGame
 	 */
 	@Test
-	public void incrementScoresTest()
+	public void scoreGameShouldBe_0_15_30_40_WinGame_Test()
 	{
 		final Player playerOne = playerFactory.createPlayer(PlayerName.PLAYER_ONE);
 		final Player playerTwo = playerFactory.createPlayer(PlayerName.PLAYER_TWO);
@@ -77,7 +77,7 @@ public class KataTests
 	}
 
 	/**
-	 * Test score equal 30 points.
+	 * Test score game equals 30 points.
 	 */
 	@Test
 	public void scoreShouldBe30Test()
@@ -95,7 +95,7 @@ public class KataTests
 	}
 
 	/**
-	 * Test score equal 40 points.
+	 * Test score game equals 40 points.
 	 */
 	@Test
 	public void scoreShouldBe40AppTest()
@@ -115,15 +115,16 @@ public class KataTests
 	}
 
 	/**
-	 * Test one point to set.
+	 * Test Mark one point to set.
 	 *
 	 * @throws KataException
 	 */
 	@Test
-	public void scoreShouldBeWinGameTest() throws KataException
+	public void scoreShouldBeOnePointTest() throws KataException
 	{
 
 		final Match match = new Match();
+
 		match.addPointForPlayer(match.getPlayerOne());
 		match.addPointForPlayer(match.getPlayerOne());
 		match.addPointForPlayer(match.getPlayerOne());
@@ -131,15 +132,17 @@ public class KataTests
 		match.addPointForPlayer(match.getPlayerOne());
 
 		assertEquals(1, match.getSets().last().getScorePlayerOne());
+		assertEquals(0, match.getSets().last().getScorePlayerTwo());
+
 	}
 
 	/**
-	 * Test DEUCE rule.
+	 * Test two Players Reach 40 points for score game, Should be Activate Deuce Rule.
 	 *
 	 * @throws KataException
 	 */
 	@Test
-	public void twoPlayersReach40DeuceTest() throws KataException
+	public void twoPlayersReach40ShouldBeActivateDeuceRuleTest() throws KataException
 	{
 
 		final Match match = new Match();
@@ -162,12 +165,12 @@ public class KataTests
 	}
 
 	/**
-	 * Test Deuce rule with take advantage for player one.
+	 * Test : Activate DEUCE rule and take advantage for player one.
 	 *
 	 * @throws KataException
 	 */
 	@Test
-	public void twoPlayersReach40AdvantageTest() throws KataException
+	public void twoPlayersReach40OnePlayerShouldBeTakeAdvantageTest() throws KataException
 	{
 
 		final Match match = new Match();
@@ -188,7 +191,6 @@ public class KataTests
 
 		// Player one take advantage
 		match.addPointForPlayer(match.getPlayerOne());
-
 		assertEquals(Boolean.TRUE, match.getPlayerOne().isAdvantage());
 
 	}
@@ -529,6 +531,7 @@ public class KataTests
 				e.printStackTrace();
 			}
 		});
+
 		// 1 point
 		IntStream.rangeClosed(1, 4).forEach((Integer) -> {
 			try
@@ -605,7 +608,7 @@ public class KataTests
 			}
 		});
 
-		// 1 point
+		// win 02 sets
 		IntStream.rangeClosed(1, 24 * 2).forEach((Integer) -> {
 			try
 			{
