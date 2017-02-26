@@ -435,7 +435,7 @@ public class KataTests
 	 * played and the first player who reach the score of 7 wins the match
 	 */
 	@Test
-	public void scoreSet67WinGameTest()
+	public void theFirstPlayerWhoReachTheScore7ShouldBeWinTheMatchTest()
 	{
 
 		final Match match = new Match();
@@ -491,7 +491,7 @@ public class KataTests
 	 * @throws KataException
 	 */
 	@Test
-	public void Tie_BreakTest() throws KataException
+	public void tie_BreakRuleShouldBeActivatedTest() throws KataException
 	{
 
 		final Match match = new Match();
@@ -589,10 +589,10 @@ public class KataTests
 	}
 
 	/**
-	 * Test new match, player one VS player two.
+	 * Test a full match : one player should be a winner (player one VS player two).
 	 */
 	@Test
-	public void onePlayerShouldBeWinTheMatchTest()
+	public void onePlayerShouldBeWinnerTest()
 	{
 		final Match match = new Match();
 
