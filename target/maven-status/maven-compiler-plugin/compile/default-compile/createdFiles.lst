@@ -1,0 +1,17 @@
+com\sg\kata\enums\RuleName.class
+com\sg\kata\Runner.class
+com\sg\kata\enums\PlayerName.class
+com\sg\kata\rule\engine\RuleEngine.class
+com\sg\kata\utils\FormatterUtils.class
+com\sg\kata\model\Match.class
+com\sg\kata\rules\impl\TieBreakRule.class
+com\sg\kata\factory\impl\PlayerFactoryImpl.class
+com\sg\kata\exception\KataException.class
+com\sg\kata\rules\impl\AdvantageRule.class
+com\sg\kata\rules\Rule.class
+com\sg\kata\model\Player.class
+com\sg\kata\rule\engine\RuleEngineImpl.class
+com\sg\kata\rules\impl\BasicRule.class
+com\sg\kata\model\Set.class
+com\sg\kata\rules\impl\UpdateMatchStatusRule.class
+com\sg\kata\factory\PlayerFactory.class
